@@ -1,6 +1,6 @@
 # CMake build file list for OpenAL
 
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 4.0)
 
 if(APPLE)
     # The workaround for try_compile failing with code signing
@@ -32,35 +32,6 @@ endif()
 
 set(CMAKE_C_VISIBILITY_PRESET hidden)
 set(CMAKE_CXX_VISIBILITY_PRESET hidden)
-
-if(COMMAND CMAKE_POLICY)
-    cmake_policy(SET CMP0003 NEW)
-    cmake_policy(SET CMP0005 NEW)
-    if(POLICY CMP0020)
-        cmake_policy(SET CMP0020 NEW)
-    endif(POLICY CMP0020)
-    if(POLICY CMP0042)
-        cmake_policy(SET CMP0042 NEW)
-    endif(POLICY CMP0042)
-    if(POLICY CMP0054)
-        cmake_policy(SET CMP0054 NEW)
-    endif(POLICY CMP0054)
-    if(POLICY CMP0058)
-        cmake_policy(SET CMP0058 NEW)
-    endif(POLICY CMP0058)
-    if(POLICY CMP0063)
-        cmake_policy(SET CMP0063 NEW)
-    endif(POLICY CMP0063)
-    if(POLICY CMP0075)
-        cmake_policy(SET CMP0075 NEW)
-    endif(POLICY CMP0075)
-    if(POLICY CMP0092)
-        cmake_policy(SET CMP0092 NEW)
-    endif(POLICY CMP0092)
-    if(POLICY CMP0117)
-        cmake_policy(SET CMP0117 NEW)
-    endif(POLICY CMP0117)
-endif(COMMAND CMAKE_POLICY)
 
 project(OpenAL)
 
